@@ -5,8 +5,11 @@
 }
 
 html {
-	background-color: #373737;
+	background: linear-gradient(360deg, #151515 70%, #272727 100%);
 	color: #999;
+    
+    height: 100vh;
+    
 }
 
 body {
@@ -15,9 +18,10 @@ body {
 }
 
 nav {
-    background-color: #202020;
+    background-color: #101010;
     width: 200px;
     height: 100vh;
+    position: fixed;
 }
 
 .logo {
@@ -26,23 +30,140 @@ nav {
 }
 
 nav ul {
-    border: 2px solid red;
+    border: 2px solid greenyellow;
     display: flex;
     justify-content: center;
     flex-direction: column;
     padding: 20px;
 }
 
-ul li {
+nav ul li {
     list-style-type: none;
     display: flex;
     justify-content: left;
     align-items: center;
-    gap: 5px;
-    border: 2px solid red;
+    gap: 10px;
+    padding: 5px;
 }
 
 a {
     text-decoration: none;
     color: #999;
+}
+
+.nav3 {
+    padding-top: 140px;
+    font-size: 10px;
+}
+
+.nav4 div {
+    border: 2px solid #999;
+    border-radius: 100px;
+}
+
+.nav4 div li {
+    padding: 5px;
+}
+
+main {
+    padding-left: 200px;
+}
+
+.main-nav {
+    background-color: #151515;
+    border: 2px solid greenyellow;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.arrows {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    order: 1;
+    gap: 5px;
+}
+
+.cta {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    border: 2px solid greenyellow;
+    order: 2;
+}
+
+
+.cta ul li {
+    list-style-type: none;
+}
+
+.icon-nav {
+    width: 20px;
+}
+
+.icon-nav-main {
+    width: 16px;
+}
+
+.arrowleft, .arrowright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid greenyellow;
+    padding: 0 5px;
+    border-radius: 50%;
+}
+
+.main-body {
+    margin: 15px;
+}
+
+.focustitle {
+    display: flex;
+}
+
+.title {
+    padding: 20px;
+    color: white;
+}
+
+.cover {
+    width: 120px;
+    flex-shrink: 0;
+
+}
+
+.playlistdiv {
+    padding: 10px;
+    margin: 15px;
+    font-size: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #202020;
+    border-radius: 5px;
+}
+
+.imagetext {
+    padding: 20px 0;
+    color: white;
+}
+
+.imagetext p {
+    color: #999;
+}
+
+.pdtitle {
+    margin-bottom: 5px;
+}
+
+.pdparag {
+    font-size: 12px;
+    max-width: 120px;
+}
+
+.focusplaylists {
+    display: flex;
 }
