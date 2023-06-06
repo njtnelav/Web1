@@ -7,9 +7,8 @@
 html {
 	background: linear-gradient(360deg, #0b0b0b 70%, #252525 100%);
 	color: #999;
-    
-    height: 100vh;
-    
+    height: 100;
+    overflow-x: hidden;  
 }
 
 body {
@@ -141,8 +140,8 @@ main {
 .cover {
     padding-top: 20px;
     width: 120px;
-    flex-shrink: 0;
-
+    height: 140px;
+    box-shadow: 0 10px 8px rgba(0, 0, 0, 0.4);
 }
 
 .playlistdiv {
@@ -155,7 +154,7 @@ main {
     align-items: center;
     background-color: #181818;
     border-radius: 5px;
-    height: 220px;
+    height: 230px;
 }
 
 .imagetext {
@@ -169,6 +168,13 @@ main {
 
 .pdtitle {
     margin-bottom: 5px;
+     line-height: 1.5; /* adjust the line height as needed */
+    -webkit-line-clamp: 1; /* display up to 2 lines of text */
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 120px;
 }
 
 .pdparag {
@@ -185,4 +191,22 @@ main {
 
 .focusplaylists {
     display: flex;
+}
+
+.links {
+    border: 2px solid greenyellow;
+    padding: 20px;
+}
+
+.links h1 {
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.7;
+}
+
+.links h2 {
+    font-size: 12px;
+    font-weight: 200;
+    line-height: 1.7;
 }
