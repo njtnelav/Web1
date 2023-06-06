@@ -5,7 +5,7 @@
 }
 
 html {
-	background: linear-gradient(360deg, #151515 70%, #272727 100%);
+	background: linear-gradient(360deg, #0b0b0b 70%, #252525 100%);
 	color: #999;
     
     height: 100vh;
@@ -18,7 +18,7 @@ body {
 }
 
 nav {
-    background-color: #101010;
+    background-color: #000;
     width: 200px;
     height: 100vh;
     position: fixed;
@@ -30,7 +30,6 @@ nav {
 }
 
 nav ul {
-    border: 2px solid greenyellow;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -70,8 +69,7 @@ main {
 }
 
 .main-nav {
-    background-color: #151515;
-    border: 2px solid greenyellow;
+    background-color: #101010;
     display: flex;
     justify-content: space-between;
     padding: 10px;
@@ -87,15 +85,24 @@ main {
 
 .cta {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
     border: 2px solid greenyellow;
     order: 2;
 }
 
+.cta ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 10px;
+}
+
 
 .cta ul li {
-    list-style-type: none;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .icon-nav {
@@ -107,16 +114,19 @@ main {
 }
 
 .arrowleft, .arrowright {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid greenyellow;
-    padding: 0 5px;
-    border-radius: 50%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background-color: #090909;
+     padding: 0;
+     width: 25px; /* adjust the width and height as needed */
+     height: 25px;
+     border-radius: 50%;
+     box-sizing: border-box;
 }
 
 .main-body {
-    margin: 15px;
+    margin: 10px;
 }
 
 .focustitle {
@@ -129,6 +139,7 @@ main {
 }
 
 .cover {
+    padding-top: 20px;
     width: 120px;
     flex-shrink: 0;
 
@@ -142,8 +153,9 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #202020;
+    background-color: #181818;
     border-radius: 5px;
+    height: 220px;
 }
 
 .imagetext {
@@ -162,6 +174,13 @@ main {
 .pdparag {
     font-size: 12px;
     max-width: 120px;
+    margin: 0;
+    line-height: 1.5; /* adjust the line height as needed */
+    -webkit-line-clamp: 2; /* display up to 2 lines of text */
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 .focusplaylists {
